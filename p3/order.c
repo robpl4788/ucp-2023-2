@@ -1,4 +1,22 @@
 #include "order.h"
+#include <stddef.h>
+
+fptr ascOrDesc(char A_or_D)
+{
+    fptr returnValue = NULL;
+
+    if (A_or_D == 'A')
+    {
+        returnValue = &ascending3;
+    }
+    else if (A_or_D == 'D')
+    {
+        returnValue = &descending3;
+    }
+    
+
+    return returnValue;
+}
 
 void ascending2(int* p1, int* p2)
 {

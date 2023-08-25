@@ -12,6 +12,11 @@ int main()
 
     readint(&a, &b, &c, &order);
 
+    ascOrDesc(order)(&a, &b, &c);
+
+    printf("%d, %d, %d\n", a, b, c);
+
+    /*
     if (order == 'A')
     {
         ascending3(&a, &b, &c);
@@ -30,6 +35,6 @@ int main()
         printf("Invalid Order\n");
     }
 
-
+    */
     return 0;
 }
